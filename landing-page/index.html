@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<head>
+    <html lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pratama Moromari</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/your-font-awesome-kit-code.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">Pratama Moromari</div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Testimoni</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </nav>
+            <div class="header-icons">
+                <div class="search-box">
+                    <input type="text" placeholder="Search">
+                    <i class="fas fa-search"></i>
+                </div>
+                <i class="fas fa-user-circle"></i>
+                <i class="fas fa-shopping-cart"></i>
+                <i class="fas fa-bars menu-toggle"></i>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <div class="container">
+                <h1 class="hero-title">
+                    Your <span class="highlight-blue">Health</span>, Our Ultimate<br>
+                    <span class="highlight-blue">Mission</span>
+                </h1>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container main-layout">
+
+                <div class="doctor-panel">
+                    <h3 class="panel-title">Available Doctor</h3>
+                    <p class="select-text">Select Doctor</p>
+
+                    <div class="doctor-list">
+                        <div class="doctor-item">
+                            <div class="doctor-avatar">
+                                <img src="img/face-woman.jpg" alt="Dr. Jessica Miller" class="avatar-img">
+                            </div>                            
+                            <div class="doctor-info">
+                                <p class="doctor-name">Dr. Jessica Miller</p>
+                                <p class="doctor-specialty">Dermatology</p>
+                            </div>
+                        </div>
+                        <div class="doctor-item">
+                            <div class="doctor-avatar">
+                                <img src="img/face-woman.jpg" alt="Dr. Jessica Miller" class="avatar-img">
+                            </div>                            
+                            <div class="doctor-info">
+                                <p class="doctor-name">Dr. Laura Martinez</p>
+                                <p class="doctor-specialty">Psychiatry</p>
+                            </div>
+                        </div>
+                        <div class="doctor-item">
+                            <div class="doctor-avatar">
+                                <img src="img/face-man.jpg" alt="Dr. Jessica Miller" class="avatar-img">
+                            </div>                            
+                            <div class="doctor-info">
+                                <p class="doctor-name">Dr. David Wilson</p>
+                                <p class="doctor-specialty">Orthopedic</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="find-doctor-btn">Find Doctor</button>
+
+                    <div class="online-doctors-promo">
+                        <img src="img/doctor1.png" alt="Online Doctors" class="promo-img">
+                        <p>Here are online doctors to work with the best online medical work with the best.</p>
+                    </div>
+
+                    <div class="doctor-count-badge">
+                        <div class="avatars-group">
+                            <div class="small-avatar" style="background-color: #add8e6;"></div>
+                            <div class="small-avatar" style="background-color: #e6add8;"></div>
+                            <div class="small-avatar" style="background-color: #d8e6ad;"></div>
+                        </div>
+                        <p class="count-text">100+ Doctor</p>
+                    </div>
+                </div>
+
+                <div class="features-panel">
+                    <div class="feature-item">
+                        <i class="far fa-clock icon-blue"></i>
+                        <h4>24/7 Complete Emergency Care</h4>
+                        <p>Always ready, expert response, anytime</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-prescription icon-blue"></i>
+                        <h4>Tailored Treatments for You</h4>
+                        <p>Personalized plans to meet each patient's unique needs</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-briefcase-medical icon-blue"></i>
+                        <h4>Complete Full-Service Care</h4>
+                        <p>Comprehensive care for all your health needs in one place.</p>
+                    </div>
+                </div>
+
+                <div class="image-stats-panel">
+                    <div class="image-container-with-shape">
+                        <div class="large-image-placeholder"></div>
+                    </div>
+                    
+                    <div class="patient-stats-badge">
+                        <div class="avatars-group">
+                            <div class="small-avatar" style="background-color: #87ceeb;"></div>
+                            <div class="small-avatar" style="background-color: #ffb6c1;"></div>
+                            <div class="small-avatar" style="background-color: #90ee90;"></div>
+                        </div>
+                        <p class="count-text">More 200K satisfied patients.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="specialist-doctor-section">
+            <div class="container">
+                <h2 class="section-title">
+                    Our <span class="highlight-blue">Specialist</span><br>
+                    <span class="highlight-blue">Doctor</span>
+                </h2>
+                <div class="doctor-header-info">
+                    <p>
+                        Explore our top-rated doctors available this week for consultation. Whether you need routine care or specialized treatment.
+                    </p>
+                    <div class="navigation-arrows">
+                        <button class="arrow-btn disabled"><i class="fas fa-arrow-left"></i></button>
+                        <button class="arrow-btn active-arrow"><i class="fas fa-arrow-right"></i></button>
+                    </div>
+                </div>
+
+                <div class="doctor-card-carousel">
+                    <div class="doctor-card">
+                        <div class="card-image-wrapper">
+                            <div class="card-image-placeholder doctor-1"></div>
+                            <div class="mask-overlay"><i class="fas fa-mask"></i></div>
+                        </div>
+                        <div class="card-info">
+                            <p class="doctor-name">Dr. David Wilson</p>
+                            <p class="doctor-specialty">Orthopedic</p>
+                            <button class="view-profile-btn">View Profile</button>
+                        </div>
+                    </div>
+
+                    <div class="doctor-card">
+                        <div class="card-image-wrapper">
+                            <div class="card-image-placeholder doctor-2"></div>
+                        </div>
+                        <div class="card-info">
+                            <p class="doctor-name">Dr. Laura Martinez</p>
+                            <p class="doctor-specialty">Psychiatry</p>
+                            <button class="view-profile-btn">View Profile</button>
+                        </div>
+                    </div>
+
+                    <div class="doctor-card">
+                        <div class="card-image-wrapper">
+                            <div class="card-image-placeholder doctor-3"></div>
+                            <div class="mask-overlay"><i class="fas fa-globe"></i></div>
+                        </div>
+                        <div class="card-info">
+                            <p class="doctor-name">Dr. Jessica Miller</p>
+                            <p class="doctor-specialty">Dermatology</p>
+                            <button class="view-profile-btn highlight">View Profile</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="who-we-are-section">
+            <div class="container who-we-are-layout">
+                <div class="image-text-content">
+                    <div class="image-with-popup">
+                        <div class="main-image-placeholder"></div>
+                        <div class="popup-card">
+                            <p class="popup-title">Heart Specialist near me</p>
+                            <div class="popup-doctor-item">
+                                <div class="popup-avatar avatar-1"></div>
+                                <div class="popup-info">
+                                    <p class="popup-name">Dr. Jessica Miller</p>
+                                    <p class="popup-specialty">Dermatology</p>
+                                </div>
+                                <div class="status-dot online"></div>
+                            </div>
+                            <div class="popup-doctor-item">
+                                <div class="popup-avatar avatar-2"></div>
+                                <div class="popup-info">
+                                    <p class="popup-name">Dr. Laura Martinez</p>
+                                    <p class="popup-specialty">Psychiatry</p>
+                                </div>
+                                <div class="status-dot online"></div>
+                            </div>
+                        </div>
+                        <button class="scroll-up-btn"><i class="fas fa-arrow-up"></i></button>
+                    </div>
+                </div>
+
+                <div class="text-feature-content">
+                    <h2 class="feature-title">
+                        <span class="highlight-blue">Who</span> We Are ?
+                    </h2>
+                    <p class="feature-description">
+                        We are a dedicated team of healthcare professionals committed to providing high-quality medical services. We strive to meet the unique needs of every patient we serve.
+                    </p>
+
+                    <div class="feature-boxes">
+                        <div class="feature-box">
+                            <div class="box-icon-bg">
+                                <i class="fas fa-hands-helping icon-blue"></i>
+                            </div>
+                            <p>Accessible care</p>
+                        </div>
+                        <div class="feature-box">
+                            <div class="box-icon-bg">
+                                <i class="fas fa-plus icon-blue"></i>
+                            </div>
+                            <p>Leader in Healthcare</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>  
+        <section class="patient-gallery-section">
+            <div class="container">
+                <h2 class="gallery-title">
+                    Our Gallery <span class="highlight-blue">Patient</span>
+                </h2>
+
+                <div class="gallery-header">
+                    <div class="gallery-tabs">
+                        <button class="tab-btn active">General</button>
+                        <button class="tab-btn">Research</button>
+                        <button class="tab-btn">Emergency</button>
+                        <button class="tab-btn">Inhalational</button>
+                    </div>
+                    <button class="view-all-btn">View All</button>
+                </div>
+
+                <div class="gallery-images">
+                    <div class="main-image-wrapper">
+                        <div class="gallery-image large-image"></div>
+                    </div>
+                    <div class="side-images-wrapper">
+                        <div class="gallery-image small-image-top"></div>
+                        <div class="gallery-image small-image-bottom"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="specialized-services-section">
+            <div class="container services-layout">
+                <div class="services-text-content">
+                    <h2 class="services-title">
+                        <span class="highlight-blue">Specialized</span><br>
+                        Services
+                    </h2>
+                    <p class="services-description">
+                        We are dedicated to providing top-tier specialized healthcare services tailored to meet the unique needs of each patient.
+                    </p>
+                    <button class="explore-now-btn">Explore Now</button>
+                </div>
+
+                <div class="services-image-content">
+                    <div class="services-image-placeholder"></div>
+                </div>
+
+                <div class="services-list-content">
+                    <div class="service-item">
+                        <h3 class="service-heading">Accurate Assessment</h3>
+                        <p class="service-detail">
+                            Comprehensive physical exams, laboratory tests, primary care, and use of advanced diagnostic tools.
+                        </p>
+                        <a href="#" class="explore-link"><i class="fas fa-arrow-right"></i> Explore More</a>
+                    </div>
+                    <div class="service-item">
+                        <h3 class="service-heading">Patient-Centered Care</h3>
+                        <p class="service-detail">
+                            Respect for Patient, Personalized care, Emotional, Spiritual, and Psychological Support.
+                        </p>
+                        <a href="#" class="explore-link"><i class="fas fa-arrow-right"></i> Explore More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="faqs-section">
+            <div class="container">
+                <h2 class="faqs-main-title">FAQs</h2>
+
+                <div class="faq-item active">
+                    <div class="faq-question">
+                        <h3>What are your operating hours?</h3>
+                        <span class="faq-toggle-icon">-</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Our hospital operates 24/7 for emergency services. Outpatient clinics are open from Monday to Friday, 8:00 AM to 5:00 PM. For specific department hours, please contact us.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What should I bring to my appointment?</h3>
+                        <span class="faq-toggle-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Please bring your identification card, insurance information, a list of current medications, and any relevant medical records or test results.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What specialized services do you offer?</h3>
+                        <span class="faq-toggle-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We offer specialized services including Oncology, Orthopedics, Dermatology, Psychiatry, and advanced diagnostic imaging.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Do you accept my insurance?</h3>
+                        <span class="faq-toggle-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We work with a wide range of insurance providers. Please contact our billing department with your insurance details to confirm coverage prior to your visit.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="patient-testimonials-section">
+            <div class="container">
+                <p class="section-subtitle">Patient Testimonials</p>
+                <h2 class="testimonials-main-title">
+                    <span class="highlight-blue">What</span> they said?
+                </h2>
+
+                <div class="testimonials-carousel">
+                    <button class="carousel-arrow left-arrow"><i class="fas fa-arrow-left"></i></button>
+
+                    <div class="testimonial-card">
+                        <div class="card-image-clip">
+                            <div class="testimonial-image image-1"></div>
+                        </div>
+                        <div class="testimonial-body">
+                            <p class="quote-text">This staff's exceptional care and encouragement gave me strength throughout my treatment.</p>
+                            <div class="patient-info">
+                                <div class="avatar-small"></div>
+                                <p class="patient-name">Linda Kim</p>
+                                <p class="patient-spec">Oncology</p>
+                            </div>
+                            <div class="ratings">
+                                <i class="fas fa-star gold"></i>
+                                <i class="fas fa-star gold"></i>
+                                <i class="fas fa-star gold"></i>
+                                <i class="fas fa-star gold"></i>
+                                <i class="fas fa-star gold"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="card-image-clip">
+                            <div class="testimonial-image image-2"></div>
+                        </div>
+                        <div class="testimonial-body">
+                            <p class="quote-text">The surgery was successfully completed, and the physiotherapy team helped me regain my strength and mobility.</p>
+                            <div class="patient-info">
+                                <div class="avatar-small"></div>
+                                <p class="patient-name">David Mizo</p>
+                                <p class="patient-spec">Orthopedics</p>
+                            </div>
+                            <div class="ratings">
+                                <i class="fas fa-star gold"></i>
+                                <i class="fas fa-star gold"></i>
+                                <i class="fas fa-star gold"></i>
+                                <i class="fas fa-star gold"></i>
+                                <i class="fas fa-star gold"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="card-image-clip">
+                            <div class="testimonial-image image-3"></div>
+                        </div>
+                        <div class="testimonial-body">
+                            <p class="quote-text">They kept me informed every step and ensured my comfort and safety. I felt well taken care of. Caring is very plentiful care.</p>
+                            <div class="patient-info">
+                                <div class="avatar-small"></div>
+                                <p class="patient-name">Sarah Joria</p>
+                                <p class="patient-spec">Emergency</p>
+                            </div>
+                            <div class="ratings">
+                                <i class="fas fa-star gold"></i>
+                                <i class="fas fa-star gold"></i>
+                                <i class="fas fa-star gold"></i>
+                                <i class="fas fa-star gold"></i>
+                                <i class="fas fa-star gold"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="carousel-arrow right-arrow"><i class="fas fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </section>                      
+    </main>
+    <footer class="main-footer">
+        <div class="container footer-layout">
+
+            <div class="footer-col about-col">
+                <h3 class="footer-logo">Pratama <span class="white-text">Moromari</span></h3>
+                <p class="footer-description">
+                    We are committed to providing exceptional healthcare services that cater to the diverse needs of our community, equipped with the latest medical technology and staffed by a team of highly skilled.
+                </p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-heading">Pages</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Testimoni</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-heading">Service</h4>
+                <ul class="footer-links">
+                    <li><a href="#">24/7 Complete</a></li>
+                    <li><a href="#">Tailored Treatments</a></li>
+                    <li><a href="#">Complete Full Service</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-heading">Contact Informa</h4>
+                <ul class="footer-links">
+                    <li><a href="#">+62 234 567 890</a></li>
+                    <li><a href="#">support@pratama.com</a></li>
+                    <li><a href="#">123 Pratama Street, Pratama City, Country</a></li>
+                </ul>
+            </div>            
+
+            <div class="footer-col">
+                <h4 class="footer-heading">Follow Us</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Facebook</a></li>
+                </ul>
+            </div>            
+
+            <div class="footer-col map-col">
+                <h4 class="footer-heading">Maps Location</h4>
+                <div class="map-placeholder">
+                    </div>
+            </div>
+
+        </div>
+    </footer>    
+</body>
+</html>
