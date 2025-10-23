@@ -24,6 +24,10 @@ a:hover {
     opacity: 1;
     color: var(--color-primary);
 }
+
+html {
+  scroll-behavior: smooth;
+}
 /*===================================== | TOP BANNER - DISCOUNT*/
 .top-banner {
     background-color: #fcbc31; 
@@ -113,6 +117,8 @@ a:hover {
     padding: 8px 18px;
     border-radius: 8px;
     font-weight: 500;
+    text-align: center;
+    color: var(--color-secondary);
 }
 .main-image{
     position: relative;
@@ -299,7 +305,9 @@ aboutus-content h2 {
 }
 .title-row{
     display: flex;
-    gap: 400px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1px;
 }
 .display-info h3 {
     margin: 0;
@@ -315,6 +323,25 @@ aboutus-content h2 {
     font-weight: bold;
     white-space: nowrap;
     color: var(--color-text-light);
+}
+/* .two{
+    padding-left: 60px;
+}
+.tree{
+    padding-left: 17px;
+}
+.four{
+    padding-left: 60px;
+} */
+
+.hidden {
+  display: none;
+}
+
+.display-btn.selected {
+  background-color: #6b4f4f;
+  color: #fff;
+  font-weight: bold;
 }
 /*===================================== | BOOK A TABLE SECTION*/
 .booking{
@@ -495,10 +522,10 @@ footer {
 }
 /*===================================== | POPUP*/
 .popup {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.85);
   display: flex;
@@ -511,7 +538,7 @@ footer {
   display: none;
 }
 .popup-content {
-  background-color: var(--color-secondary);
+    background-color: var(--color-secondary);
   border: 2px solid var(--color-primary);
   padding: 2rem;
   border-radius: 12px;
@@ -526,12 +553,12 @@ footer {
   margin-bottom: 10px;
 }
 #close-popup {
-  background-color: #f5b301;
-  color: #000;
-  border: none;
-  padding: 10px 20px;
-  margin-top: 20px;
-  border-radius: 8px;
+    background-color: #f5b301;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 8px;
   cursor: pointer;
   font-weight: bold;
   transition: 0.3s;

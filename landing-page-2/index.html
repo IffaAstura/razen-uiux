@@ -16,12 +16,12 @@
             <img src="img/logo.png" alt="company logo">
         </div>
         <nav class="nav-links">
-            <a href="#">Our Menu</a>
-            <a href="#">Blog</a>
+            <a href="menu.html">Our Menu</a>
+            <a href="#blog">Blog</a>
             <a href="#">Resource</a>
-            <a href="#">Team</a>
+            <a href="#team">Team</a>
         </nav>
-        <button href="#" class="menu-btn">Discover Our Menu</button>
+        <a href="#menu" class="menu-btn">Discover Our Menu</a>
     </header>
 
     <main class="main">
@@ -37,7 +37,7 @@
                     At Rosetto, we prioritize quality ingredients and exceptional service to ensure your visit is
                     nothing short of extraordinary.
                 </p>    
-                <button class="cta-button">Discover Our Menu</button>            
+                <a href="#menu" class="cta-button">Discover Our Menu</a>            
             </div>        
     
             <div class="main-image">
@@ -46,7 +46,7 @@
             </div>
         </section>
 
-        <div class="second-image">
+        <div class="second-image" id="team">
             <div class="image-top">
                 <img src="img/top1.jpg" alt="image top 1">
             </div>
@@ -71,7 +71,7 @@
                     <h3>Open Hours</h3>
                     <p><strong>Monday - Friday: </strong>08.00 AM - 11.00 PM</p>
                     <p><strong>Saturday - Sunday: </strong>12.00 AM - 11.00 PM</p>
-                    <a class="aboutus-btn" href="#">Book a Reservation</a>
+                    <a class="aboutus-btn" href="#booking">Book a Reservation</a>
                 </div>
 
                 <div class="aboutus-contact">
@@ -106,19 +106,20 @@
         </div>
     </section>
 
-    <section class="display-menu">
+    <section class="display-menu" id="menu">
         <aside class="sidebar">
-            <button class="display-btn">🍝 Pasta</button>
-            <button class="display-btn selected">🥤 Drinks</button>
-            <button class="display-btn">🍰 Dessert</button>
-        </aside>        
-        <div class="display-list">
+            <button class="display-btn" data-category="pasta">🍝 Pasta</button>
+            <button class="display-btn selected" data-category="drinks">🥤 Drinks</button>
+            <button class="display-btn" data-category="dessert">🍰 Dessert</button>
+        </aside>       
+        
+        <div class="display-list" data-category="drinks">
             <div class="display-item">
                 <img src="img/menu1.jpg" alt="display">
                 <div class="display-info">
                     <div class="title-row">
                         <h3>Vanilla Latte Vibes</h3>
-                        <span class="price">Rp. 15K</span>
+                        <span class="price">Rp. 25K</span>
                     </div>
                     <p>Hot/Ice</p>
                 </div>
@@ -127,8 +128,8 @@
                 <img src="img/menu2.jpg" alt="display">
                 <div class="display-info">
                     <div class="title-row">
-                        <h3>Vanilla Latte Vibes</h3>
-                        <span class="price">Rp. 15K</span>
+                        <h3>Americano</h3>
+                        <span class="price two">Rp. 20K</span>
                     </div>
                     <p>Hot/Ice</p>
                 </div>
@@ -137,8 +138,8 @@
                 <img src="img/menu3.jpg" alt="display">
                 <div class="display-info">
                     <div class="title-row">
-                        <h3>Vanilla Latte Vibes</h3>
-                        <span class="price">Rp. 15K</span>
+                        <h3>Hanzelnut Coffe</h3>
+                        <span class="price tree">Rp. 30K</span>
                     </div>
                     <p>Hot/Ice</p>
                 </div>
@@ -147,17 +148,103 @@
                 <img src="img/menu4.jpg" alt="display">
                 <div class="display-info">
                     <div class="title-row">
-                        <h3>Vanilla Latte Vibes</h3>
-                        <span class="price">Rp. 15K</span>
+                        <h3>Cappucino</h3>
+                        <span class="price four">Rp. 23K</span>
                     </div>
                     <p>Hot/Ice</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="display-list hidden" data-category="pasta">
+            <div class="display-item">
+                <img src="img/menu5.jpg" alt="display">
+                <div class="display-info">
+                    <div class="title-row">
+                        <h3>Pasta Original</h3>
+                        <span class="price">Rp. 20K</span>
+                    </div>
+                    <p>Homemade</p>
+                </div>
+            </div>
+            <div class="display-item">
+                <img src="img/menu6.jpg" alt="display">
+                <div class="display-info">
+                    <div class="title-row">
+                        <h3>Seaweed Pasta</h3>
+                        <span class="price two">Rp. 25K</span>
+                    </div>
+                    <p>Homemade</p>
+                </div>
+            </div>
+            <div class="display-item">
+                <img src="img/menu7.jpg" alt="display">
+                <div class="display-info">
+                    <div class="title-row">
+                        <h3>Macaroni Cheese</h3>
+                        <span class="price tree">Rp. 30K</span>
+                    </div>
+                    <p>Homemade</p>
+                </div>
+            </div>
+            <div class="display-item">
+                <img src="img/menu8.jpg" alt="display">
+                <div class="display-info">
+                    <div class="title-row">
+                        <h3>Spicy Pasta</h3>
+                        <span class="price four">Rp. 24K</span>
+                    </div>
+                    <p>Homemade</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="display-list hidden" data-category="dessert">
+            <div class="display-item">
+                <img src="img/menu9.jpg" alt="display">
+                <div class="display-info">
+                    <div class="title-row">
+                        <h3>Peanut Butter Cup Cheesecake</h3>
+                        <span class="price">Rp. 32K</span>
+                    </div>
+                    <p>Sweet</p>
+                </div>
+            </div>
+            <div class="display-item">
+                <img src="img/menu10.jpg" alt="display">
+                <div class="display-info">
+                    <div class="title-row">
+                        <h3>Panna Cotta</h3>
+                        <span class="price two">Rp. 15K</span>
+                    </div>
+                    <p>Sweet</p>
+                </div>
+            </div>
+            <div class="display-item">
+                <img src="img/menu11.jpg" alt="display">
+                <div class="display-info">
+                    <div class="title-row">
+                        <h3>Brownies Chocolate</h3>
+                        <span class="price tree">Rp. 22K</span>
+                    </div>
+                    <p>Sweet</p>
+                </div>
+            </div>
+            <div class="display-item">
+                <img src="img/menu12.jpg" alt="display">
+                <div class="display-info">
+                    <div class="title-row">
+                        <h3>Mochi Matcha</h3>
+                        <span class="price four">Rp. 27K</span>
+                    </div>
+                    <p>Sweet</p>
                 </div>
             </div>
         </div>
     </section>
 
 
-    <section class="booking">
+    <section class="booking" id="booking">
         <h1>Book a Table</h1>
         <p class="booking-text">
             Reserve your table and indulge in exquisite flavors at Roasetto, Cracow’s haven of elegance.<br>
@@ -225,8 +312,8 @@
             <div class="subscribe-btn">
                 <h3>Stay up to date</h3>
                 <div class="subscribe-box">
-                    <input type="email" placeholder="Enter your email">
-                    <button>Subscribe</button>
+                    <input type="email" id="subscribe-email" placeholder="Enter your email">
+                    <button id="subscribe-btn">Subscribe</button
                 </div>
             </div>
         </div>
@@ -234,7 +321,7 @@
 
     <section class="footer-image"></section>
 
-    <footer>
+    <footer id="blog">
         <div class="footer-content">
             <div class="footer-logo">
                 <img src="img/logo.png" alt="logo">
@@ -272,7 +359,15 @@
             <button id="close-popup">Close</button>
         </div>
     </div>
-    
+
+    <div id="popup" class="popup hidden">
+        <div class="popup-content">
+            <h2>Reservation Confirmed!</h2>
+            <p id="popup-message"></p>
+            <button id="close-popup">Close</button>
+        </div>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
